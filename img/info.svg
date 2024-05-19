@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="katman_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_00000020395310976389893130000014867243797167540914_);}
+	.st2{opacity:0.5;fill:#0E246F;}
+	.st3{fill:#0E246F;}
+	.st4{fill:#FFFFFF;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="242.6976" y1="63.5024" x2="840.0894" y2="-533.8895" gradientTransform="matrix(1 0 0 1 0 700)">
+	<stop  offset="0.2185" style="stop-color:#17629C"/>
+	<stop  offset="0.8394" style="stop-color:#518DC9"/>
+</linearGradient>
+<path class="st0" d="M853.1,510.7c0,197.5-160.1,357.6-357.6,357.6c-11.1,0-22.2-0.5-33-1.5c-85.9-7.9-163.1-46.1-220.5-104
+	c-59.1-59.4-97.4-139.5-103.3-228.4c-0.5-7.8-0.8-15.8-0.8-23.7c0-197.5,160.1-357.6,357.6-357.6c98.4,0,187.5,39.7,252.2,104.1
+	C812.8,321.9,853.1,411.6,853.1,510.7z"/>
+<linearGradient id="SVGID_00000078015578255693073590000015862397587805250466_" gradientUnits="userSpaceOnUse" x1="115.8187" y1="-63.1812" x2="713.2082" y2="-660.5707" gradientTransform="matrix(1 0 0 1 0 700)">
+	<stop  offset="0.2185" style="stop-color:#17629C"/>
+	<stop  offset="0.8394" style="stop-color:#518DC9"/>
+</linearGradient>
+<path style="fill:url(#SVGID_00000078015578255693073590000015862397587805250466_);" d="M747.7,257.1L241.9,762.9
+	c-59.1-59.4-97.4-139.5-103.3-228.4c-0.5-7.8-0.8-15.8-0.8-23.7c0-197.5,160.1-357.6,357.6-357.6C593.9,153.1,683,192.8,747.7,257.1
+	z"/>
+<path class="st2" d="M656,673.3L462.4,866.8c-174.2-16-312.3-156.9-323.8-332.4l189.2-189.2l0.2,0.2l327.8,327.8L656,673.3z"/>
+<circle class="st3" cx="491.5" cy="509.7" r="232"/>
+<circle class="st4" cx="499.1" cy="502.1" r="232"/>
+<g>
+	<path class="st3" d="M447.8,495.6v-38.1h78v127.4h24.6V623H447.8v-38H473v-89.3h-25.2V495.6z M471,410.1c0-8,2.8-14.7,8.5-20.4
+		c5.6-5.7,12.5-8.5,20.4-8.5c8.1,0,14.9,2.8,20.5,8.5c5.6,5.7,8.4,12.5,8.4,20.4s-2.8,14.7-8.5,20.4c-5.6,5.6-12.5,8.5-20.4,8.5
+		s-14.7-2.8-20.4-8.5C473.9,424.7,471,418,471,410.1z"/>
+</g>
+</svg>

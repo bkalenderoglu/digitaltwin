@@ -1,0 +1,777 @@
+@font-face {
+    font-family: 'Ralewey';
+    src: url(../font/font.ttf);
+}
+
+@font-face {
+    font-family: 'Ralewey';
+    src: url(../font/regular.ttf);
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow: hidden;
+    font-family: 'Ralewey' !important;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --mavi: #0D3BC0;
+    --turkuaz: #01d0be;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(64, 64, 64, 1);
+    border-radius: 10px;
+    opacity: .5
+}
+
+.scale0 {
+    transform: scale(0) !important;
+    height: 0 !important;
+}
+
+body {
+    background-color: #0D3BC0;
+}
+
+.gizle {
+    display: none !important;
+    height: 0px
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #0D3BC0;
+    z-index: 10;
+}
+
+.loading.back::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../img/icon.svg) no-repeat;
+    background-size: 300px;
+    background-position: bottom right;
+    z-index: 10;
+    opacity: .2;
+    bottom: 0;
+    right: 0
+}
+
+.loading img {
+    width: 62px;
+    margin: auto;
+}
+
+.dil_secenek {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 15;
+    touch-action: none;
+}
+
+.dil_secenek div {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    padding-top: 70px;
+    top: 50%;
+    transform: translate(0px, calc(-50% - 70px));
+}
+
+.dil_secenek span {
+    color: #0D3BC0;
+    font-size: 27px;
+    margin-bottom: 10px;
+    display: block;
+    padding: 0 10px;
+}
+
+.dil_secenek div img {
+    margin: 0 20px;
+    border-radius: 50%;
+    width: 95px;
+    cursor: pointer
+}
+
+.dil_secenek .logo {
+    position: absolute;
+    height: 40px !important;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%, 0px);
+}
+
+canvas {
+    cursor: grab !important;
+    touch-action: none;
+}
+
+canvas:active {
+    cursor: grabbing !important;
+}
+
+canvas.pointer {
+    cursor: pointer !important;
+}
+
+.giris {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    overflow: overlay;
+    display: flex;
+    background: rgb(0 0 0 / 40%);
+    touch-action: none;
+}
+
+.giris .metin {
+    width: calc(100% - 25px);
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+    font-size: 25px;
+    padding: 25px;
+    background: rgb(239 239 251 / 90%);
+    border-radius: 10px;
+    border: 3px solid #0D3BC0;
+}
+
+.giris .metin p {
+    padding-bottom: 12px;
+    font-weight: 300;
+    color: #0D3BC0;
+    line-height: 35px;
+}
+
+.giris .lokasyonlar {
+    display: flex;
+    margin-top: 30px;
+    transition: all ease 1s;
+    transform: scale(1)
+}
+
+.giris .lokasyonlar .nav_buton * {}
+
+.giris .lokasyonlar .nav_buton {
+    max-width: 20%;
+    margin: auto;
+    cursor: pointer
+}
+
+.giris .lokasyonlar .nav_buton .text img {
+    max-width: calc(100% - 20px);
+    width: 300px;
+}
+
+.metin .dil p img {
+    width: auto;
+    height: 30px;
+    vertical-align: text-top;
+}
+
+.giris .lokasyonlar .nav_buton .text {
+    background: url("../img/aciklama-back-orta.png");
+    color: #134386;
+    text-align: center;
+    font-size: 14px;
+    background-size: 100%;
+    background-position: top;
+    position: relative
+}
+
+.bar {
+    width: 100% !important;
+    height: auto;
+    display: block
+}
+
+.lo_gizle {
+    height: 0;
+    transition: all ease 1s;
+    overflow: hidden;
+}
+
+.lo_gizle2 {
+    height: 0;
+    transition: all ease 1s;
+    overflow: hidden;
+}
+
+.text .yazi {
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    background: rgba(14, 36, 111, 0.5);
+    font-size: 17px;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    transition: all ease 1s
+}
+
+.text .yazi:hover {
+    background: rgba(14, 36, 111, 0.7);
+}
+
+.text .yazi span {
+    margin: auto
+}
+
+/*//*/
+
+.frame {
+    position: absolute;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    border: 50px solid transparent;
+    top: 0;
+    left: 0;
+    z-index: 65
+}
+
+.frame iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    background: #fff
+}
+
+.frame-kapat {
+    position: absolute;
+    width: 30px;
+    left: 100%;
+    top: -30px;
+    cursor: pointer;
+}
+
+.nokta {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.nokta::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: green;
+    margin: auto;
+    height: 2px;
+    border-radius: 20px;
+}
+
+.nokta::before {
+    content: "";
+    display: block;
+    width: 2px;
+    background: green;
+    position: absolute;
+    margin: auto;
+    height: 100%;
+    border-radius: 20px;
+    left: calc(50% - 1px);
+}
+
+.sayi {
+    position: fixed;
+    background: wheat;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+    right: 0;
+}
+
+.aciklama {
+    background: url("../img/aciklama-back-orta.png");
+    color: #134386;
+    padding: 3px 40px;
+    width: 260px;
+    text-align: center;
+    font-size: 14px;
+    left: 220px;
+    opacity: .9;
+    background-size: 340px;
+    background-position: top
+}
+
+.aciklama::before {
+    content: "";
+    background: url(../img/aciklama-back-ust.png);
+    width: 340px;
+    height: 22px;
+    position: absolute;
+    top: -21px;
+    left: 0;
+    background-size: 340px;
+}
+
+.aciklama::after {
+    content: "";
+    background: url(../img/aciklama-back-alt.png);
+    width: 340px;
+    height: 26px;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    background-size: 340px;
+}
+
+.dil {
+    display: none;
+}
+
+.kapat {
+    width: 25px;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+header {
+    background: rgba(14, 36, 111, .6);
+    width: 250px;
+    transition: left ease 1s;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    left: -250px;
+    top: 0;
+    overflow: initial;
+}
+
+header .icerik {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    overflow-y: overlay;
+    touch-action: auto;
+}
+
+header .logo {
+    width: 75%;
+    height: 100px;
+    display: flex;
+    margin: 50px auto auto auto;
+}
+
+header .logo img {
+    width: 100%
+}
+
+header .diller {
+    width: 75%;
+    padding: 10px 0;
+    margin-left: 12.5%;
+    height: 30px;
+    text-align: center;
+}
+
+header .dil_buton {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%
+}
+
+.diller img:nth-last-child(1) {
+    margin-right: 0;
+}
+
+header navbar {
+    width: calc(75% - 2px);
+    display: block;
+    margin: auto;
+}
+
+header navbar ul {
+    margin-top: -15px;
+    margin-bottom: 50px;
+}
+
+header navbar ul li {
+    border: 1px solid #fff;
+    margin-top: 15px;
+}
+
+header navbar ul li a {
+    color: #fff;
+    line-height: 40px;
+    display: block;
+    font-size: 12px;
+    padding: 0 10px;
+    cursor: pointer
+}
+
+.menu_toogle {
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background: #0e246f;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.menu_toogle:hover {
+    background: #01d0be
+}
+
+.menu_toogle img {
+    width: 50%;
+    margin: 25%;
+}
+
+.sosyal {
+    width: 75%;
+    display: flex;
+    text-align: center;
+    height: 100px;
+    margin: auto auto 50px auto;
+}
+
+.sosyal a {
+    display: inline-block;
+    margin: auto auto 0 auto
+}
+
+.sosyal a img {
+    height: 20px;
+}
+
+img.map_icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 70px;
+    cursor: pointer
+}
+
+.harita {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(0);
+    transition: all ease .5s;
+    display: flex;
+    opacity: 0;
+    touch-action: none;
+}
+
+.harita.acik {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.harita img {
+    width: calc(100% - 8px);
+    border: 4px solid #fff;
+    border-radius: 15px;
+}
+
+.harita .icerik {
+    overflow: hidden;
+    width: 1252px;
+    height: 708px;
+    transform: translate(-50%, -50%) scale(1);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.harita_kapat {
+    position: absolute;
+    width: 30px !important;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border: none !important;
+    z-index: 1
+}
+
+.harita .nav_buton {
+    position: absolute;
+    margin: 0;
+    cursor: pointer;
+    display: flex
+}
+
+.harita .nav_buton span {
+    margin: auto;
+    font-size: 1.8vh;
+    color: #0D3BC0;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+
+.harita .yonetici {
+    width: 12.7%;
+    top: 39%;
+    height: 8.5%;
+    left: 31.7%;
+}
+
+.harita .personel {
+    width: 12.8%;
+    top: 67.7%;
+    height: 8.5%;
+    left: 38.2%;
+}
+
+.harita .koridor {
+    width: 12.8%;
+    top: 43.4%;
+    height: 8.5%;
+    left: 48%;
+}
+
+.harita .depo {
+    width: 12.8%;
+    top: 58.4%;
+    height: 8.5%;
+    left: 52.3%;
+}
+
+.harita .arge {
+    width: 12.8%;
+    top: 25.7%;
+    height: 8.5%;
+    left: 65.7%;
+}
+
+.ses {
+    width: 70px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.ses img.ses_ac {
+    display: block
+}
+
+.ses img.ses_kapat {
+    display: none
+}
+
+.ses.acik img.ses_kapat {
+    display: block !important;
+}
+
+.ses.acik img.ses_ac {
+    display: none !important;
+}
+
+.navigasyon {
+    position: absolute;
+    height: 110px;
+    z-index: 3;
+    transition: transform ease 1s;
+    bottom: 0;
+    transform: translate(-50%, 110px);
+    left: 50%;
+    width: 990px;
+    max-width: 100%;
+}
+
+.navigasyon.acik {
+    transform: translate(-50%, 0px);
+}
+
+.nav_toogle {
+    top: 0;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-135deg);
+    border-radius: 13%;
+    position: absolute;
+    border: 25px solid #0e246f;
+    border-left-color: transparent !important;
+    border-top-color: transparent !important;
+    z-index: -1;
+    overflow: initial;
+    opacity: .8
+}
+
+.nav_toogle:hover {
+    border-color: #01d0be
+}
+
+.nav_toogle img {
+    width: 25px;
+    position: absolute;
+    margin: -8px;
+}
+
+.nav_toogle.active {
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 2;
+    opacity: .5
+}
+
+.navigasyon .icerik {
+    background: rgba(14, 36, 111, .6);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navigasyon .nav_buton {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    float: left;
+    margin-right: -5px;
+}
+
+.navigasyon .nav_buton img {
+    width: 90% !important;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: -1
+}
+
+.navigasyon .nav_buton div.bilgi {
+    width: 80%;
+    padding: 5%;
+    background: rgba(14, 36, 111, .6);
+    height: 80%;
+    color: #fff;
+    transition: all ease 1s;
+    opacity: 0;
+    margin: auto;
+    display: flex
+}
+
+.navigasyon .nav_buton span {
+    margin: auto;
+    text-align: center
+}
+
+.navigasyon .nav_buton div:hover {
+    opacity: 1;
+}
+
+.owl-stage-outer,
+.owl-item {
+    height: 100%;
+}
+
+.owl-item {
+    margin-right: -5px;
+}
+
+.liste {
+    margin-bottom: -10px
+}
+
+.liste li {
+    list-style: disc;
+    text-align: left;
+    margin-bottom: 10px
+}
+
+@media (max-width:500px) {
+    .harita img {
+        padding: 0px
+    }
+    .giris .lokasyonlar .nav_buton {
+        max-width: 30%;
+    }
+    .text .yazi {
+        font-size: 15px
+    }
+    .giris .metin p {
+        font-size: 17px;
+        line-height: 20px
+    }
+    .metin .dil p img {
+        width: auto;
+        height: 20px;
+        vertical-align: text-top;
+    }
+    .ucgen {
+        transform-origin: 10px 13px !important;
+    }
+    .loading.back::before {
+        width: 150px;
+        height: 150px;
+        background-size: 150px;
+    }
+    .dil_secenek div img {
+        width: 70px
+    }
+}
+
+/*.menu_toogle,.sayi,.nav_toogle{display:none;}*/

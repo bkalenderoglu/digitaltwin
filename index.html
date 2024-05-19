@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Sanovel Oryantasyon Eğitimi</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</head>
+
+<body>
+    <div class="dil_secenek gizle">
+        <div><span>Eğitime hangi dilde katılmak istersin? <br>  Which language would you like to attend the training?</span><br>
+            <img src="img/tr.svg" class="dil_buton" dil="tr"><img src="img/en.svg" class="dil_buton" dil="en">
+        </div>
+        <img class="logo" src="img/logo-mavi.svg">
+    </div>
+    <div id="container">
+        <div class="ses">
+            <audio src="sound/back.mp3" id="back_ses" autoplay loop muted></audio>
+            <img src="img/ses_acik.svg" class="ses_kapat" alt="">
+            <img src="img/ses_kapali.svg" class="ses_ac" alt="">
+        </div>
+        <header>
+            <div class="menu_toogle"><img src="img/menu.svg"></div>
+            <div class="icerik">
+                <div class="logo"><img src="img/logo.svg"></div>
+                <navbar>
+                    <div class="diller"><img src="img/tr.svg" class="dil_buton" dil="tr"><img src="img/en.svg" class="dil_buton" dil="en"></div>
+                    <ul class="nav">
+                        <li><a class="link" tr="hikayemiz.html" en="our-heritage.html"><span class="dil tr">Hikayemiz</span><span class="dil en">Our Story</span></a></li>
+                        <li><a class="link" tr="vizyon-ve-degerlerimiz.html" en="vision-and-values.html"><span class="dil tr">Vizyon ve Değerlerimiz</span><span class="dil en">Vision and Values</span></a></li>
+                        <li><a class="link" tr="sanovel-kulturu.html" en="people-and-culture.html"><span class="dil tr">Sanovel Kültürü</span><span class="dil en">Sanovel Culture</span></a></li>
+                        <li><a class="link" tr="silivri-fabrika.html" en="the-silivri-factory.html"><span class="dil tr">Silivri Fabrika</span><span class="dil en">The Silivri Factory</span></a></li>
+
+                        <li><a class="map_icon"><span class="dil tr">Lokasyonlarımız</span><span class="dil en">Our Locations</span></a></li>
+
+                    </ul>
+                </navbar>
+                <div class="sosyal">
+                    <a href="https://twitter.com/SanovelFarma"><img src="img/sosyal/t.svg"></a>
+                    <a href="https://www.youtube.com/channel/UCalJjYbjroIb5-eDU5HMCPg"><img src="img/sosyal/y.svg"></a>
+                    <a href="https://www.linkedin.com/company/sanovelilac/"><img src="img/sosyal/l.svg"></a>
+                    <a href="https://www.instagram.com/sanovelilac/"><img src="img/sosyal/i.svg"></a>
+                    <a href="https://www.facebook.com/sanovel"><img src="img/sosyal/f.svg"></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="loading back animate__animated">
+            <img src="img/loading.svg" />
+        </div>
+        <div class="nokta"><span class="sayi"></span></div>
+    </div>
+    <!---container -->
+    <div class="giris">
+        <div class="metin dil tr">
+            <div class="dil tr">
+                <p id="target"></p>
+            </div>
+
+            <div class="lo_gizle">
+                <div class="lokasyonlar" id="tr">
+                    <div kure="5" class="nav_buton">
+                        <img src="img/aciklama-back-ust.png" class="bar">
+                        <div class="text">
+                            <img src="img/nav/5.jpg">
+                            <div class="yazi"><span>Yönetici <br> Girişi</span> </div>
+                        </div>
+                        <img src="img/aciklama-back-alt.png" class="bar">
+                    </div>
+                    <div kure="51" class="nav_buton" aci="-90">
+                        <img src="img/aciklama-back-ust.png" class="bar">
+                        <div class="text">
+                            <img src="img/nav/51.jpg">
+                            <div class="yazi"><span>Personel <br> Girişi</span></div>
+                        </div>
+                        <img src="img/aciklama-back-alt.png" class="bar">
+                    </div>
+                    <div kure="111" class="nav_buton">
+                        <img src="img/aciklama-back-ust.png" class="bar">
+                        <div class="text">
+                            <img src="img/nav/111.jpg">
+                            <div class="yazi"><span>Ar-Ge <br> Merkezi</span></div>
+                        </div>
+                        <img src="img/aciklama-back-alt.png" class="bar">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="metin dil en">
+            <div class="dil en">
+                <p id="target2"></p>
+            </div>
+
+            <div class="lo_gizle2">
+                <div class="lokasyonlar" id="en">
+                    <div kure="5" class="nav_buton">
+                        <img src="img/aciklama-back-ust.png" class="bar">
+                        <div class="text">
+                            <img src="img/nav/5.jpg">
+                            <div class="yazi"><span>Administrator <br> Entrance</span> </div>
+                        </div>
+                        <img src="img/aciklama-back-alt.png" class="bar">
+                    </div>
+                    <div kure="51" class="nav_buton" aci="-90">
+                        <img src="img/aciklama-back-ust.png" class="bar">
+                        <div class="text">
+                            <img src="img/nav/51.jpg">
+                            <div class="yazi"><span>Personnel <br> Entrance</span> </div>
+                        </div>
+                        <img src="img/aciklama-back-alt.png" class="bar">
+                    </div>
+                    <div kure="111" class="nav_buton">
+                        <img src="img/aciklama-back-ust.png" class="bar">
+                        <div class="text">
+                            <img src="img/nav/111.jpg">
+                            <div class="yazi"><span>R&D <br> Center</span></div>
+                        </div>
+                        <img src="img/aciklama-back-alt.png" class="bar">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!---arge başlangıc -->
+    <div class="gizle aciklama_1"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Ar-Ge merkezimizin tüm çalışmalarının odağında bilim yatmaktadır. Güçlü Ar-Ge’si ve patent/fikri haklar alanlarındaki yetkinlikleri ile Sanovel, eşdeğer ilaç pazarında pek çok tedavi alanında pazara ilk eşdeğer ürün sunan şirket konumundadır. <br><br>
+			Sanovel Ar-Ge 1998 yılında kurulmuş, 2013 yılında da Ar-Ge merkezi olmuştur. 71 kişilik kadrosuyla, Formülasyon Geliştirme, Teknoloji ve Proses İyileştirme, Analitik Geliştirme ve CMC gruplarından oluşmaktadır. 
+			</span>
+
+        <span class="dil en">Science is at the center of all the work of our R&D center. With its strong R&D infrastructure and competency in the fields of patents / intellectual property, Sanovel is the first company to offer equivalent products to the market in many therapeutic areas in the generig drug market. <br><br>
+			Sanovel R&D was established in 1998 and became an R&D center in 2013. With a staff of 71 people, it consists of Formulation Development, Technology and Process Improvement, Analytical Development and CMC groups.
+			</span>
+    </div>
+
+    <div class="gizle aciklama_2"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr"> Burası, Sanovel İlaç Ar-Ge merkezinin girişidir. Ulusal ve Uluslarası kongrelerde pek çok ödüle layık görülmüştür. Sanovel Ar-Ge, 2016 ve 2017 yıllarında iki yıl üst üste Sanayi Bakanlığı tarafından ilaç sektörünün 1 numaralı Ar-Ge merkezi seçilmiştir. İlaç sektöründe en çok patent başvurusu yapan ilaç firmasıdır.</span>
+        <span class="dil en">This is the entrance to the Sanovel Pharmaceuticals R&D center. Sanovel R&D was deemed worthy of many awards in national and international congresses. Sanovel R&D has been selected as the number 1 R&D center of the pharmaceutical industry by the Ministry of Industry for two consecutive years in 2016 and 2017. It is the pharmaceutical company with the highest number of patent applications in the pharmaceutical industry.</span>
+    </div>
+
+    <div class="gizle aciklama_3"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Ofis olarak tasarlanmış olan gördüğünüz alanlar, personellerimizin laboratuvarlar ve kimyasal malzemelere maruz kalmadan, teorik olarak çalışmalarını yürütebileceği şekilde dizayn edilmiştir.</span>
+        <span class="dil en">This space, which is designed as an office area, has been designed in such a way that the staff can carry out their work without being exposed to laboratory and chemical material section.</span>
+    </div>
+
+    <div class="gizle aciklama_4"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Sanovel Ar-Ge laboratuvarları, Formülasyon Geliştirme Laboratuvarı, Yaş Kimya Laboratuvarı ve Enstrümental Analiz Laboratuvarı olarak üç ana laboratuvardan oluşmaktadır. Bu laboratuvarlarda, katı (tablet, film kaplı tablet, kapsül, kuru toz süspansiyon), yarı katı, likit ve steril ürün dozaj formları, en yeni teknolojileri kullanarak geliştirilmektedir.</span>
+        <span class="dil en">Sanovel R&D laboratories consist of three main laboratories as Formulation Development Laboratory, Wet Chemistry Laboratory and Instrumental Analysis Laboratory. In these laboratories, solid (tablet, film-coated tablet, capsule, dry powder suspension), semi-solid, liquid and sterile product dosage forms are developed using the latest technologies.</span>
+    </div>
+
+
+    <div class="gizle aciklama_5"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Enstrümental Analiz Laboratuvarı olarak tasarlanmış olan gördüğünüz alan, HPLC, GC, FTIR, DSC, UV gibi en yeni teknolojiye sahip cihazlar kullanılarak, Yaş Kimya Laboratuvarında hazırlığı yapılan numunelerin analizlerinin yapıldığı alanlardır.</span>
+        <span class="dil en">This is our Intrumental Analysis Laboratory. It is the area where the analyzes of the samples prepared in the Wet Chemistry Laboratory are carried out using the latest technology devices such as HPLC, GC, FTIR, DSC, UV.</span>
+    </div>
+
+    <div class="gizle aciklama_6"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Yaş Kimya Laboratuvarı olarak tasarlanmış olan gördüğünüz alan, geliştirme aşaması ve pilot üretim aşamalarında kullanılan hammaddelerin ve bu aşamalarda elde edilen ürünlerin analizi için çalışmaların yürütüldüğü alandır.</span>
+        <span class="dil en">This area is our Wet Chemistry Laboratory. It is the area where studies are carried out fort he analysis of the raw materials used in the development and pilot production phases as well as the products obtained in these phases.</span>
+    </div>
+
+    <div class="gizle aciklama_7"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Formülasyon Geliştirme Laboratuvarında, HSM granülatör, FBD, Kaplama, ceketten ısıtmalı, homojenizatörlü krem-pomat tankı, likit tankı gibi yüksek teknolojik cihazlarda formülasyon geliştirme çalışmaları yapılmaktadır. </span>
+        <span class="dil en">In the Formulation Development Laboratory, formulation development studies are carried out in high-tech devices such as HSM granulator, FBD, Coating, jacket heated, cream-pomade tank with homogenizer, liquid tank.</span>
+    </div>
+    <!---arge bitis -->
+    <!---kalite başlangıc -->
+    <div class="gizle aciklama_8"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Kalite Sistemleri Bölümü; Uluslararası standartlara ve cGMP kurallarına uygun olarak Kalite Yönetim Sistemini kurma,   işletme ve iyileştirilmesine yönelik faaliyetlerin gerçekleştirilmesinden sorumludur.</span>
+        <span class="dil en">Quality Systems Department is responsible for establishing, operating and improving the Quality Management System in compliance with international standards and cGMP rules.</span>
+    </div>
+
+    <div class="gizle aciklama_9"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Üretim prosesinin, temizlik yöntemlerinin ve yardımcı sistemlerin işlevini, önceden belirlenmiş gerekliliklere uygun olarak yerine getirildiğine emin olmak için gerçekleştirilen çalışmaların dokümante edildiği ofis alanıdır.</span>
+        <span class="dil en">It is the office area where documentation takes place. Documents include the work carried out to ensure that the production process, cleaning methods and auxiliary systems function in accordance with predetermined requirements.</span>
+    </div>
+
+    <div class="gizle aciklama_10"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Üretim prosesinin başlangıç onayının verildiği, başlangıçtan itibaren tüm aşamalarda numunelerin analiz edildiği, prosesin istatistiksel araçlarla kontrol edildiği ve elde edilen analiz sonuçlarına göre üretim aşamalarının yönlendirildiği proses içi kontrol laboratuvardır.</span>
+        <span class="dil en">It is the in-process control laboratory where the initial approval is given to the production process. IPK Laboratory is also responsible for sample analysis at all stages including the beginning, controlling the process with statistical tools and directing the production stages according to the analysis results obtained.</span>
+    </div>
+
+    <div class="gizle aciklama_11"><img src="img/kapat.svg" class="kapat">
+        <ul class="liste">
+            <li class="dil tr">Bulunduğumuz yer Kalite Kontrol’e giriş alanıdır. Kalite Kontrol B ve C olmak üzere 2 bloktan oluşmaktadır.</li>
+            <li class="dil en">This is the entrance area to the Quality Control. Quality Control Department consists of 2 blocks, which are Block B and Block C.</li>
+            <li class="dil tr">B Blokta Analitik Metot Validasyon ve Giriş Kalite Kontrol bölümleri bulunmaktadır.</li>
+            <li class="dil en">Analytical Method Validation and Incoming Materials Quality Control departments are located in Block B.</li>
+        </ul>
+    </div>
+
+
+    <div class="gizle aciklama_13"><img src="img/kapat.svg" class="kapat">
+
+        <ul class="liste">
+            <li class="dil tr">Giriş Kalite Kontrol bölümü etken, yardımcı, ambalaj malzemelerinin analizlerini yapmaktadır.</li>
+            <li class="dil en">Incoming Materials Quality Control department analyzes the active ingredients, excipients and packaging materials.</li>
+            <li class="dil tr">Bitmiş Ürün bölümü yarı mamul ve bitmiş ürün kontrol analizlerini yapmaktadır.</li>
+            <li class="dil en">The Finished Products Department performs semi-finished and finished goods’ final controls and analyzes.</li>
+            <li class="dil tr">Mikrobiyolojik olarak incelenecek ürün, hammadde, ambalaj, üretim alanları için gerekli testlerin gerçekleştirilmesi Mikrobiyoloji bölümünün sorumluluğundadır.</li>
+            <li class="dil en">The Microbiology department is responsible for carrying out the necessary microbiologic tests for the products, raw materials, packages and production areas.</li>
+            <li class="dil tr">Kalite Kontrol, Yaş Kimya, Enstrumental Analiz Laboratuvarı ve ofislerden oluşmaktadır.</li>
+            <li class="dil en">Quality Control Department consists of Wet Chemistry Laboratory, Instrumental Analysis Laboratory and offices.</li>
+            <li class="dil tr">Enstrumental Laboratuvarında 44 adet HPLC/UPLC, 18 adet dissolüsyon, GC, UV spektrofotometre vb. bir çok cihaz bulunmaktadır.</li>
+            <li class="dil en">There are many devices in Instrumental Laboratory such as 44 HPLC/UPLC, 18 dissolutions, GC, UV spectrophotometer, etc.</li>
+            <li class="dil tr">Yaş Kimya Laboratuvarında analizler için gerekli hazırlıklar yapılarak fiziksel, kimyasal testler gerçekleştirilir.</li>
+            <li class="dil en">Physical and chemical tests are carried out by making the necessary preparations in the Wet Chemistry Laboratory.</li>
+        </ul>
+    </div>
+    <!---kalite bitis -->
+    <!---katı üretim alanı başlangıc -->
+    <div class="gizle aciklama_19"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Katı Üretim Giriş Koridoru 'Hayatı iyileştirdiğimiz alana giriştir.:)'</span>
+        <span class="dil en">Solid Production Area Entrance Corridor: It is the entrance to the area where we “get people’s lives better :)” </span>
+    </div>
+
+    <div class="gizle aciklama_20"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Granülasyon Odası: Toz Tanecik boyutunu istenen boyuta getirmek için yapılan işlem adımıdır.</span>
+        <span class="dil en">Granulation Chamber: It is the process in which we turn the powder-sized material to the desired size.</span>
+    </div>
+
+    <div class="gizle aciklama_21"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Kaplama Odası: Basılan tabletlere rengi, stabilitesi ve tat maskelemesini artırmak üzere boyar madde ile kaplama işleminin uygulandığı adımdır. </span>
+        <span class="dil en">Coating Chamber: It is the process in which the dyestuff coating process is applied to the compressed tablets to increase their color, stability and taste-masking.</span>
+    </div>
+
+    <div class="gizle aciklama_22"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Tablet Baskı: Elden edilen granüle tozların, farklı biçim (yuvarlak, oblong vs.), gramaj, kalınlık ve sertlikte tablet formuna dönüştürüldüğü proses adımıdır. </span>
+        <span class="dil en">Tablet Compressing: It is the process in which the granulated powder is converted into tablets of different shapes (round, oblong, etc.), weight, thickness and hardness.</span>
+    </div>
+
+    <div class="gizle aciklama_23"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">IBC Bekletme Koridoru</span>
+        <span class="dil en">IBC Holding Corridor</span>
+    </div>
+    <!---katı üretim alanı bitis -->
+    <!---katı ambalaj başlangıc -->
+    <div class="gizle aciklama_24"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Likit-pomat ve steril üretim alanlarına giden ara koridordur.</span>
+        <span class="dil en">It is the middle corridor leading to the liquid pomade and sterile production areas.</span>
+    </div>
+
+    <div class="gizle aciklama_25"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Üretim alanlarına giriş yapılan personele ait özel geçiş odalarıdır.</span>
+        <span class="dil en">They are special passage rooms for the personnel entering the production areas.</span>
+    </div>
+
+    <div class="gizle aciklama_26"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Katı üretim ve ambalaj, Likit pomad üretim ve ambalaj, steril üretim ve ambalaj, depo gibi bölümlere geçiş yapılan koridordur.</span>
+        <span class="dil en">It is the corridor through which sections such as solid production and packaging, liquid pomade production and packaging, sterile production and packaging and the warehouse are reached.</span>
+    </div>
+
+    <div class="gizle aciklama_27"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Katı amabalaj, Likit pomad ambalaj, Steril ambalaj alanlarına giden ara koridordur.</span>
+        <span class="dil en">It is the middle corridor leading to the areas of solid packaging, liquid pomade packaging and sterile packaging.</span>
+    </div>
+
+    <div class="gizle aciklama_28"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Ürünlerin primer ambalaj işlemi sonrası sekonder ambalajlarının yapıldığı alandır. Şişelerde etiketleme-kutulama ve kolileme; blisterlerde ise kutulama ve kolileme işlemleri yapılır.</span>
+        <span class="dil en">It is the area where the secondary packaging takes place after the primary packaging process. Labeling, boxing and packaging of bottled products as well as boxing and packaging processes of blisters are carried out in this area.</span>
+    </div>
+
+    <div class="gizle aciklama_29"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Primer ambalaj odalarında ürünlerin birincil ambalajlar olan blister ve şişeleme işlemleri yapılır. Ürünün hava ile teması kesilir ve kutulanmak üzere sekonder ambalaj alanına gönderilir.</span>
+        <span class="dil en">Blister packaging and bottling processes, which are the primary ways of packaging, are carried out in the primary packaging rooms. The contact of the product with air is cut off and the product is sent to the secondary packaging area for boxing.</span>
+    </div>
+
+    <div class="gizle aciklama_30"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Katı primer ambalaj ve Katı üretim alanlarına giriş yapılan personel geçiş odalarıdır. </span>
+        <span class="dil en">They are the passage rooms for personnel, which lead to primary packaging and solid production areas.</span>
+    </div>
+
+    <div class="gizle aciklama_31"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Palet değiştirci odalarda üretime girişte ürünler palet değiştirici ile tahta paletten plastik palete; çıkışta ise plastik paletten tahta palete aktarılır. </span>
+        <span class="dil en">In the pallet transfer rooms, located at the entrance of the production line, the products are transferred from wooden pallets to plastic pallets with pallet changers; at the exit, they are transferred from plastic pallets to wooden pallets again.</span>
+    </div>
+    <!---katı ambalaj bitis -->
+    <div class="gizle aciklama_32"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr"><strong>Bilgi Teknolojileri Departmanı</strong></span>
+        <span class="dil en">Information Technologies Department</span>
+    </div>
+    <div class="gizle aciklama_33"><img src="img/kapat.svg" class="kapat">
+        <span class="dil tr">Personel Yemekhane Alanı</span>
+        <span class="dil en">Staff Dining Hall</span>
+    </div>
+
+    </div>
+    <div class="frame"><img src="img/frame-kapat.svg" class="frame-kapat"><iframe src="" frameborder="0"></iframe></div>
+
+    <div class="navigasyon">
+        <div class="icerik owl-carousel owl-theme">
+            <div class="nav_buton item" kure="5"><img src="img/nav/5.jpg">
+                <div class="bilgi"><span class="dil tr">Yönetici Girişi</span> <span class="dil en">Administrator Entrance</span> </div>
+            </div>
+            <div class="nav_buton item" kure="10"><img src="img/nav/10.jpg">
+                <div class="bilgi"><span class="dil tr">Ofisler</span><span class="dil en">Offices
+</span> </div>
+            </div>
+            <div class="nav_buton item" kure="51" aci="-90"><img src="img/nav/51.jpg">
+                <div class="bilgi"><span class="dil tr">Personel Girişi</span><span class="dil en">Personnel Entrance</span> </div>
+            </div>
+            <div class="nav_buton item" kure="30"><img src="img/nav/30.jpg">
+                <div class="bilgi"><span class="dil tr">Yemekhane</span><span class="dil en">Dining Hall</span> </div>
+            </div>
+            <div class="nav_buton item" kure="44"><img src="img/nav/44.jpg">
+                <div class="bilgi"><span class="dil tr">Kalite Kontrol</span><span class="dil en">Quality Control</span> </div>
+            </div>
+            <div class="nav_buton item" kure="82"><img src="img/nav/82.jpg">
+                <div class="bilgi"><span class="dil tr">Katı Üretim Hattı</span><span class="dil en">Solid Production Line</span> </div>
+            </div>
+            <div class="nav_buton item" kure="72" aci="-90"><img src="img/nav/72.jpg">
+                <div class="bilgi"><span class="dil tr">Paketleme</span><span class="dil en">Packaging</span> </div>
+            </div>
+            <div class="nav_buton item" kure="71"><img src="img/nav/71.jpg">
+                <div class="bilgi"><span class="dil tr">Depo</span><span class="dil en">Warehouse</span> </div>
+            </div>
+            <div class="nav_buton item" kure="111"><img src="img/nav/111.jpg">
+                <div class="bilgi"><span class="dil tr">Ar-Ge Merkezi</span><span class="dil en">R&D Center</span> </div>
+            </div>
+
+        </div>
+
+        <div class="nav_toogle"><img src="img/icon.svg"></div>
+
+    </div>
+
+    <div class="harita">
+        <img src="img/frame-kapat.svg" class="harita_kapat">
+
+        <div class="icerik">
+            <img src="img/map.jpg" class="harita_gorsel div tr">
+            <span class="nav_buton yonetici" kure="5"><span class="dil tr">Yönetici Binası</span> <span class="dil en">Administrator Building</span> </span>
+            <span class="nav_buton personel" kure="51" aci="-90"><span class="dil tr">Personel Girişi</span><span class="dil en">Personnel Entrance</span> </span>
+            <span class="nav_buton koridor" kure="16"><span class="dil tr">Ana Koridor</span><span class="dil en">Main Hallway</span> </span>
+            <span class="nav_buton depo" kure="71"><span class="dil tr">Depo</span><span class="dil en">Warehouse</span> </span>
+            <span class="nav_buton arge" kure="111"><span class="dil tr">Ar-Ge Merkezi</span><span class="dil en">R&D Center</span> </span>
+            <span class="bilgi dil tr">Gitmek istediğiniz lokasyona tıklayınız.</span>
+        </div>
+    </div>
+    <img src="img/harita.png" class="map_icon">
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="katman_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 715.2 715.2" style="enable-background:new 0 0 715.2 715.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#0E246F;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="104.7977" y1="-507.529" x2="702.1895" y2="-1104.921" gradientTransform="matrix(1 0 0 1 0 1117.9314)">
+	<stop  offset="0.2185" style="stop-color:#0E246F"/>
+	<stop  offset="0.8394" style="stop-color:#518DC9"/>
+</linearGradient>
+<path class="st0" d="M715.2,357.6c0,197.5-160.1,357.6-357.6,357.6c-11.1,0-22.2-0.5-33-1.5c-85.9-7.9-163.1-46.1-220.5-104
+	C45,550.3,6.7,470.2,0.8,381.3C0.3,373.5,0,365.5,0,357.6C0,160.1,160.1,0,357.6,0C456,0,545.1,39.7,609.8,104.1
+	C674.9,168.8,715.2,258.5,715.2,357.6z"/>
+<circle class="st1" cx="361.2" cy="349" r="266"/>
+<path id="delta1" class="st2" d="M445.6,458.3c-3.9,0-7.7-1.5-10.7-4.4c-5.9-5.9-5.9-15.5,0-21.4c41.3-41.3,41.3-108.4,0-149.7
+	c-5.9-5.9-5.9-15.5,0-21.4s15.5-5.9,21.4,0c25.7,25.7,39.9,59.9,39.9,96.2s-14.1,70.5-39.9,96.2
+	C453.3,456.8,449.5,458.3,445.6,458.3z"/>
+<path id="delta2" class="st2" d="M391.9,429.8c-3.9,0-7.7-1.5-10.7-4.4c-5.9-5.9-5.9-15.5,0-21.4c25.5-25.5,25.5-67.1,0-92.6
+	c-5.9-5.9-5.9-15.5,0-21.4s15.5-5.9,21.4,0c37.3,37.3,37.3,98.1,0,135.4C399.6,428.3,395.8,429.8,391.9,429.8z"/>
+<path class="st2" d="M345.4,221.1c8.1-8.1,14.7-5.3,14.7,6.1V488c0,11.4-6.6,14.2-14.7,6.1l-76-76H219V297.2h50.4L345.4,221.1z"/>
+</svg>
